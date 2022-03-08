@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+h2 {color:orange}
+p {color:orange}
+</style>
+</head>
+<body>
+
+<h2>EasyJet SSS</h2>
+
+<form action="calculations.php" method="POST">
+  <label for="outflight">Outbound Sector:</label><br>
+  <input type="text" id="outflight" name="outflight" ><br>
+  <label for="inflight">Inbound Sector:</label><br>
+  <input type="text" id="inflight" name="inflight" > <br>
+    <label for="inbrequest">Are you requesting Inbound?</label><br>
+  <input type="text" id="inbrequest" name="inbrequest" > <br>
+  <label for="outdate">Date of first flight:</label><br>
+  <input type="date" id="outdate" name="outdate" > <br>
+  <label for="indate">Date of last flight:</label><br>
+  <input type="date" id="indate" name="indate" > <br>
+  <label for="seats">Number of seats:</label><br>
+  <input type="number" min="0" step="1" id="seats" name="seats" > <br><br>
+  
+  
+  <table>
+  
+  <tr>
+    <th>
+  <label for="outday">Outbound Day of week:</label> </th> <th>
+  <label for="inday">Inbound Day of week:</label> </th></tr>
+  <tr> <td>
+  <input type="checkbox" id="od1" name="od1" >
+<label for="od1"> Monday</label><br>
+<input type="checkbox" id="od2" name="od2" >
+<label for="od2"> Tuesday</label><br>
+<input type="checkbox" id="od3" name="od3" >
+<label for="od3"> Wednesday</label><br>
+ <input type="checkbox" id="od4" name="od4" >
+<label for="od4"> Thursday</label><br>
+<input type="checkbox" id="od5" name="od5" >
+<label for="od5"> Friday</label><br>
+<input type="checkbox" id="od6" name="od6" >
+<label for="od6"> Saturday</label><br>
+<input type="checkbox" id="od7" name="od7" >
+<label for="od7"> Sunday</label><br></td>
+
+
+
+    <td> <input type="checkbox" id="id1" name="id1" >
+<label for="id1"> Monday</label><br>
+<input type="checkbox" id="id2" name="id2" >
+<label for="id2"> Tuesday</label><br>
+<input type="checkbox" id="id3" name="id3" >
+<label for="id3"> Wednesday</label><br>
+ <input type="checkbox" id="id4" name="id4" >
+<label for="id4"> Thursday</label><br>
+<input type="checkbox" id="id5" name="id5" >
+<label for="id5"> Friday</label><br>
+<input type="checkbox" id="id6" name="id6" >
+<label for="id6"> Saturday</label><br>
+<input type="checkbox" id="id7" name="id7" >
+<label for="id7"> Sunday</label><br>  </td>
+  </tr>
+
+</table>
+
+ <br>
+  <table>
+  
+  <tr>
+    <th>
+  <label for="ostd">Outbound STD:</label> </th> <th>
+  <label for="istd">Inbound STD:</label> </th></tr>
+  <tr> <td>
+  <input type="checkbox" id="ostd1" name="ostd1" >
+<label for="ostd1"> 05:00-13:00</label><br>
+<input type="checkbox" id="ostd2" name="ostd2" >
+<label for="ostd2"> 13:00-20:00</label><br>
+<input type="checkbox" id="ostd3" name="ostd3" >
+<label for="ostd3"> 20:00-05:00</label><br>
+
+    <td> <input type="checkbox" id="istd1" name="istd1" >
+<label for="istd1"> 05:00-13:00</label><br>
+<input type="checkbox" id="istd2" name="istd2" >
+<label for="istd2"> 13:00-20:00</label><br>
+<input type="checkbox" id="istd3" name="istd3" >
+<label for="istd3"> 20:00-05:00</label><br>
+   </td>
+  </tr>
+ 
+</table>
+
+ 
+</form>
+<br>
+<input type="button" value="Submit" name="button">
+
+<p>Final Price: </p> 
+
+</body>
+</html>
+
